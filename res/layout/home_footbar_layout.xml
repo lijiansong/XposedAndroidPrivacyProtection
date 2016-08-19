@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 整体布局是水平线性布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_footbar"
+    android:layout_width="wrap_content"
+    android:layout_height="54dip"
+    android:background="@drawable/bottom_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+    <!-- 从左到右的组件依次为闹钟提醒，添加日志，更新日志 -->
+    <LinearLayout
+        android:id="@+id/plan_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="4dip"
+        android:layout_weight="1"
+        android:background="@drawable/home_bottom_style"
+        android:gravity="center" 
+        android:orientation="vertical" >
+        <ImageButton
+            android:id="@+id/SYS"
+            android:layout_width="28dip"
+            android:layout_height="28dip"
+            android:background="@drawable/plan_logo_style" />
+        <TextView
+            android:id="@+id/plan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="2dip"
+            android:text="系统计划"
+            android:textColor="@android:color/black"
+            android:textSize="8dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/addlog_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="4dip"
+        android:layout_weight="1"
+        android:background="@drawable/home_bottom_style"
+        android:orientation="vertical" >
+        <ImageButton
+            android:id="@+id/SMS"
+            android:layout_width="28dip"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:background="@drawable/addlog_logo_style" />
+        <TextView
+            android:id="@+id/addLog_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:paddingTop="2dip"
+            android:text="短信计划"
+            android:textColor="@android:color/black"
+            android:textSize="8dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/updateLog_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="4dip"
+        android:layout_weight="1"
+        android:background="@drawable/home_bottom_style"
+        android:orientation="vertical" >
+        <ImageButton
+            android:id="@+id/GPS"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/updatelog_logo_style" />
+        <TextView
+            android:id="@+id/updatelog_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:paddingTop="2dip"
+            android:text="GPS计划"
+            android:textColor="@android:color/black"
+            android:textSize="8dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

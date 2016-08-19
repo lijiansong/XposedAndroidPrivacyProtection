@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<com.whu.main.GuideView 
+    android:id="@+id/dynamic"
+    android:background="#008B00"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    />
+    
+    
+ <TableLayout
+        android:layout_below="@id/dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee" 
+        android:paddingTop="2dp">
+        <TableRow>
+
+          <LinearLayout
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:orientation="vertical" 
+        >
+
+        <ImageButton
+            android:id="@+id/aqpz_bt"
+            android:layout_width="@dimen/logowith"
+            android:layout_height="@dimen/logowith"
+            android:background="@drawable/aqpz_style" />
+
+        <TextView
+            android:id="@+id/aqpz_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="2dip"
+            android:text="安全配置"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+     <LinearLayout
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="1dip"
+        android:background="#ffffff"
+        android:layout_weight="1"
+        android:paddingLeft="1dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/rzjlbt"
+            android:layout_width="@dimen/logowith"
+            android:layout_height="@dimen/logowith"
+            android:background="@drawable/rzjl_style" />
+
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="2dip"
+            android:text="日志记录"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+           
+        </TableRow>
+ <TableRow>
+
+          <LinearLayout
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="1dip"
+         android:background="#ffffff"
+        android:layout_weight="1"
+        android:gravity="center"
+         android:paddingRight="1dp"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/jhrwbt"
+            android:layout_width="@dimen/logowith"
+            android:layout_height="@dimen/logowith"
+            android:background="@drawable/jhrw_style" />
+
+        <TextView
+      
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="2dip"
+            android:text="计划任务"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+     <LinearLayout
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="1dip"
+         android:background="#ffffff"
+        android:layout_weight="1"
+        android:gravity="center"
+         android:paddingLeft="1dp"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/yyglbt"
+            android:layout_width="@dimen/logowith"
+            android:layout_height="@dimen/logowith"
+            android:background="@drawable/yygl_style" />
+
+        <TextView
+             
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="2dip"
+            android:text="应用管理"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+           
+        </TableRow>
+        
+    </TableLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+ 
+    </LinearLayout>
+</RelativeLayout>

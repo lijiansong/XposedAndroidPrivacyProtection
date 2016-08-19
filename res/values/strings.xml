@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Protect Privacy</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <drawable name="topbarbg">#ff3333</drawable>
+    <color name="textcolor">#ff3333</color>
+</resources>

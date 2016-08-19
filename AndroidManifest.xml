@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lsx.main"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <!-- xposed 支持 -->
+    
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <!-- xposed支持 -->
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="30" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="拦截WorkingMessage的send方法进行加密，拦截SmsSingleRecipientSender的构造方法进行解密" />
+        
+        <activity
+            android:name="com.whu.main.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.whu.yygl.yygl"></activity>
+        <activity android:name="com.whu.yygl.ItemAppDetail"></activity>
+        <activity android:name="com.whu.aqpz.Safe"></activity>
+        <activity android:name="com.whu.rzjl.rzgl"></activity>
+        <activity android:name="com.whu.jhrw.jhrw"></activity>
+        <activity android:name="com.whu.about.AboutActivity"></activity>
+        <activity android:name="com.whu.help.HelpActivity"></activity>
+    </application>
+
+</manifest>

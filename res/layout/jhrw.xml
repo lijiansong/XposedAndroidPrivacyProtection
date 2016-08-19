@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#f0ffff" >
+
+  
+<RelativeLayout 
+    android:id="@+id/time"
+    android:layout_alignParentTop="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"  
+    android:gravity="center">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+      >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始时间"
+            android:textColor="@color/textcolor"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/year_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="0000"
+            android:inputType="number"
+            android:maxLength="4"
+           
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年"
+            android:textColor="@color/textcolor"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/month_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="00"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月"
+            android:textColor="@color/textcolor"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/day_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="00"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日"
+            android:textColor="@color/textcolor"
+            android:textSize="18sp" />
+           <EditText
+            android:id="@+id/hour_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="00"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时"
+            android:textColor="@color/textcolor"
+            android:textSize="18sp" />
+             <EditText
+            android:id="@+id/minute_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="00"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分"
+            android:textColor="@color/textcolor"
+            android:textSize="18sp" />
+    </LinearLayout>
+      <LinearLayout
+          android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停止时间"
+            android:textColor="@color/textcolor"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/year_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="0000"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年"
+            android:textColor="@color/textcolor"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/month_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="00"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月"
+            android:textColor="@color/textcolor"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/day_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="00"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日"
+            android:textColor="@color/textcolor"
+            android:textSize="18sp" />
+             <EditText
+            android:id="@+id/hour_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="00"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时"
+            android:textColor="@color/textcolor"
+            android:textSize="18sp" />
+             <EditText
+            android:id="@+id/minute_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="00"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分"
+            android:textColor="@color/textcolor"
+            android:textSize="18sp" />
+    </LinearLayout>
+   
+    
+    </LinearLayout>
+    
+    </RelativeLayout>
+  
+
+       <RelativeLayout 
+           android:id="@+id/ok_l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_below="@id/time">
+    <include layout="@layout/ok_layout">
+     </include>
+    </RelativeLayout>
+  
+
+<RelativeLayout
+        
+        android:id="@+id/home_footbar_ry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+         >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <include layout="@layout/home_footbar_layout" >
+            </include>
+            <!-- 滑动列表选择菜单 -->
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- 日历显示界面 -->
+
+
+    <RelativeLayout
+        android:id="@+id/home_expandable_list_ry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/home_footbar_ry"
+        android:layout_below="@id/ok_l"
+      
+    >
+
+        <ListView
+            android:id="@+id/listLogs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+                       >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>
